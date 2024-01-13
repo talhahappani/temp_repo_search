@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    background-color: #fff;
+    font-size: 1.2rem;
+    border: #e8e8e8 1px solid;
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    margin: 0;
+    outline: none;
+}
+
+
+
+h1 {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+p {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+
+li {
+    list-style: none;
+    margin: 1rem 2rem 0.5rem 2rem;
+    font-weight: 500;
+}
+
+.title {
+    margin: 2rem 1.5rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-search {
+    background-color: #555555;
+    height: 40px;
+    width: 50px;
+    color: #fff;
+    border: #e8e8e8 1px solid ;
+    cursor: pointer;
+}
+
+.result-content {
+    background-color: #f8f7f7;
+    height: 1000px;
+    width: 1200px;
+    margin-top: 0.5rem;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.result-content .left-content {
+    background-color: #eeece6;
+    min-width: 25%;
+}
+
+.result-content .right-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.image-wrapper {
+    position: relative;
+    height: 150px;
+    width: 100%;
+}
+
+.image-wrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.image-discount::before {
+    content: '-%' attr(discount-amount);
+    color: #ffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #d01343;
+    height: 35px;
+    width: 50px;
+    border-radius: 0 0 35% 0;
+    font-size: 17px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-content-card {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: #efeeee 2px solid;
+    height: 320px;
+}
+
+.right-content .title {
+    margin-bottom: 1rem;
+}
+
+.right-content .product-details{
+    font-size: 18px;
+    margin: 1rem;
+}
+
+.right-content .price-2 {
+    margin: 0 1rem 0 1rem;
+    font-size: 16px;
+    color: #aabac4;
+}
+
+.right-content .price-discount {
+    color: #273c56;
+    font-size: 18px;
+    margin: 0.5rem 0.5rem;
+    border: 1px solid #273c56;
+    padding: 5px 5px;
+}
+
+.right-content .price {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
